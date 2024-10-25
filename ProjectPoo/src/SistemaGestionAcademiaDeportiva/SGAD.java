@@ -19,6 +19,7 @@ public class SGAD {
     public static void main(String[] args) {
         
         System.out.println("Hola Edu");
+        System.out.println("Hola Leonardo");
     }
     
 }
