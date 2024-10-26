@@ -67,6 +67,11 @@ public class Desing2_1 extends javax.swing.JFrame {
         btnRegistrarse.setForeground(new java.awt.Color(0, 0, 0));
         btnRegistrarse.setText("Registrarse");
         btnRegistrarse.setBorder(null);
+        btnRegistrarse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistrarseActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Georgia", 2, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
@@ -165,6 +170,15 @@ public class Desing2_1 extends javax.swing.JFrame {
         x.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_btnReturnActionPerformed
+
+    private void btnRegistrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarseActionPerformed
+        // TODO add your handling code here:
+        RegisterStudent x = new RegisterStudent();
+        x.setVisible(true);
+        x.setLocationRelativeTo(null);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_btnRegistrarseActionPerformed
 
      class FondoPanel extends JPanel{
         private Image imagen;
