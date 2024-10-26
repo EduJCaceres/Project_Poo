@@ -1,6 +1,6 @@
 package Class;
 
-public class Entrenador {
+public class Entrenador extends Persona{
 
     //Atributos
     private int idEntrenador;
@@ -9,7 +9,8 @@ public class Entrenador {
     private double salario;
 
     //Constructor vacío
-    public Entrenador() {
+    public Entrenador(String name, String lastName){
+        super(name, lastName);
     }
 
     //Getters y Setters
@@ -45,4 +46,8 @@ public class Entrenador {
         this.salario = salario;
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

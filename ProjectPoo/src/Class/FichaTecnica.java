@@ -1,16 +1,9 @@
 
 package Class;
 
-import java.util.ArrayList;
-
-
 public abstract class FichaTecnica {
     
-    //Atributos
-    
-    private ArrayList<Alumno> alumnos;         
-    private ArrayList<Rendimiento> rendimiento;           
-    private int categoria;                     
+    //Atributos                  
     private int competenciasGanadas; 
     
     //Construstor vacío
@@ -19,31 +12,6 @@ public abstract class FichaTecnica {
     }
 
     //Getters y Setters
-    
-    public ArrayList<Alumno> getAlumnos() {
-        return alumnos;
-    }
-
-    public void setAlumnos(ArrayList<Alumno> alumnos) {
-        this.alumnos = alumnos;
-    }
-
-    public ArrayList<Rendimiento> getRendimiento() {
-        return rendimiento;
-    }
-
-    public void setRendimiento(ArrayList<Rendimiento> rendimiento) {
-        this.rendimiento = rendimiento;
-    }
-
-    public int getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(int categoria) {
-        this.categoria = categoria;
-    }
-
     public int getCompetenciasGanadas() {
         return competenciasGanadas;
     }
@@ -54,9 +22,6 @@ public abstract class FichaTecnica {
 
     @Override
     public String toString() {
-        return "FichaTecnica{" + "alumnos=" + alumnos + ", rendimiento=" + rendimiento + ", categoria=" + categoria + ", competenciasGanadas=" + competenciasGanadas + '}';
+        return "FichaTecnica{" + "competenciasGanadas=" + competenciasGanadas + '}';
     }
-    
-    
-    
 }

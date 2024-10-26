@@ -8,15 +8,15 @@ package Class;
  *
  * @author Edu
  */
-abstract class Persona {
+public abstract class Persona {
     private String nombre;
     private String apellido;
     private int docIdentidad;
     private String email;
-    private String user;
-    private String pass;
 
-    public Persona() {
+    public Persona(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 
     public String getNombre() {
@@ -50,26 +50,10 @@ abstract class Persona {
     public void setEmail(String email) {
         this.email = email;
     }
-
-    public String getUser() {
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
-    }
-
-    public String getPass() {
-        return pass;
-    }
-
-    public void setPass(String pass) {
-        this.pass = pass;
-    }
-
+    
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", docIdentidad=" + docIdentidad + ", email=" + email + ", user=" + user + ", pass=" + pass + '}';
+        return "Persona{" + "nombre=" + nombre + ", apellido=" + apellido + ", docIdentidad=" + docIdentidad + ", email=" + email +'}';
     }
     
 }

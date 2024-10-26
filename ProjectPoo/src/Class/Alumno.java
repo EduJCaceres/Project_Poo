@@ -20,7 +20,8 @@ public class Alumno extends Persona {
     
     //Constructor vacío
 
-    public Alumno() {
+    public Alumno(String name, String lastName){
+        super(name, lastName);
     }
     
       //Getters y Setters 
@@ -106,5 +107,10 @@ public class Alumno extends Persona {
         this.pensiones = pensiones;
     }
     */
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
     
 }

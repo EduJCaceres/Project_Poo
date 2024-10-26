@@ -2,19 +2,12 @@
 package Class;
 
 
-public class Administrador extends Alumno {
-    
-    //Atributos
+public class Administrador extends Persona{
     private int idAdministrador;
-    private String nombre;
-    private String apellido;
     
-    //Constructor vacío
-
-    public Administrador() {
+    public Administrador(String name, String lastName){
+        super(name, lastName);
     }
-    
-   //Getters y Setters
 
     public int getIdAdministrador() {
         return idAdministrador;
@@ -24,22 +17,8 @@ public class Administrador extends Alumno {
         this.idAdministrador = idAdministrador;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-    
-    
-    
+    @Override
+    public String toString() {
+        return super.toString();
+    }   
 }
