@@ -9,7 +9,7 @@ public class ClaseDeportiva {
     //Atributos
     private int idClase;
     //private ArrayList<Deporte> deportes;     
-    private ArrayList<Alumno> alumnos;       
+   // private ArrayList<Alumno> alumnos;       
     private String entrenador;
     private String horario;
     private String duracion;
