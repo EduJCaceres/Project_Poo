@@ -81,6 +81,11 @@ public class DesingCoach extends javax.swing.JFrame {
         btnIngresar.setForeground(new java.awt.Color(255, 255, 255));
         btnIngresar.setText("Ingresar");
         btnIngresar.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.white));
+        btnIngresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIngresarActionPerformed(evt);
+            }
+        });
 
         btnReturn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/return.jpg"))); // NOI18N
         btnReturn.addActionListener(new java.awt.event.ActionListener() {
@@ -173,6 +178,14 @@ public class DesingCoach extends javax.swing.JFrame {
         x.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_btnRegistrarseActionPerformed
+
+    private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
+        // TODO add your handling code here:
+        MenuCoach y = new MenuCoach();
+        y.setVisible(true);
+        y.setLocationRelativeTo(null);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnIngresarActionPerformed
 
      class FondoPanel extends JPanel{
         private Image imagen;
