@@ -51,7 +51,7 @@ public class RegisterStudent extends javax.swing.JFrame {
         txtNombre = new javax.swing.JTextField();
         txtApellido = new javax.swing.JTextField();
         txtPais = new javax.swing.JTextField();
-        fecNac = new com.toedter.calendar.JDateChooser();
+        fecNac = new org.netbeans.modules.form.InvalidComponent();
         jcDeporte = new javax.swing.JComboBox<>();
         jTextField4 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
@@ -116,6 +116,12 @@ public class RegisterStudent extends javax.swing.JFrame {
         jLabel11.setText("E-mail:");
 
         jcDeporte.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Futbol", "Voley", "Baloncesto", "Natacion", "Tenis", "Futbol Sala", "Boxeo" }));
+
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
 
         jLabel14.setForeground(new java.awt.Color(0, 0, 0));
         jLabel14.setText("Celular:");
@@ -362,6 +368,10 @@ public class RegisterStudent extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnReturnActionPerformed
 
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
      class FondoPanel extends JPanel{
         private Image imagen;
             
@@ -380,7 +390,7 @@ public class RegisterStudent extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnReturn;
     private javax.swing.ButtonGroup docIdent;
-    private com.toedter.calendar.JDateChooser fecNac;
+    private org.netbeans.modules.form.InvalidComponent fecNac;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
