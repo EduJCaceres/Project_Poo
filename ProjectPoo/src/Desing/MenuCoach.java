@@ -64,43 +64,53 @@ public class MenuCoach extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Elige entre las diferentes opciones:");
 
-        jLabel3.setFont(new java.awt.Font("DialogInput", 2, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setFont(new java.awt.Font("DialogInput", 3, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 0, 0));
         jLabel3.setText("Para ver tu Horario:");
 
-        jLabel5.setFont(new java.awt.Font("DialogInput", 2, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setFont(new java.awt.Font("DialogInput", 3, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(153, 0, 0));
         jLabel5.setText("Para ver la lista de tus Alumnos:");
 
-        jLabel6.setFont(new java.awt.Font("DialogInput", 2, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setFont(new java.awt.Font("DialogInput", 3, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(153, 0, 0));
         jLabel6.setText("Para ver tus Datos:");
 
-        btnHorario.setBackground(new java.awt.Color(255, 255, 255));
+        btnHorario.setBackground(new java.awt.Color(0, 204, 204));
         btnHorario.setFont(new java.awt.Font("DialogInput", 2, 11)); // NOI18N
-        btnHorario.setForeground(new java.awt.Color(0, 0, 0));
+        btnHorario.setForeground(new java.awt.Color(0, 204, 204));
         btnHorario.setText("Horario");
         btnHorario.setBorder(null);
-        btnHorario.setBorderPainted(false);
+        btnHorario.setContentAreaFilled(false);
         btnHorario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHorarioActionPerformed(evt);
             }
         });
 
-        btnLista.setBackground(new java.awt.Color(255, 255, 255));
+        btnLista.setBackground(new java.awt.Color(0, 204, 204));
         btnLista.setFont(new java.awt.Font("DialogInput", 2, 11)); // NOI18N
-        btnLista.setForeground(new java.awt.Color(0, 0, 0));
+        btnLista.setForeground(new java.awt.Color(0, 204, 204));
         btnLista.setText("Alumnos");
         btnLista.setBorder(null);
-        btnLista.setBorderPainted(false);
+        btnLista.setContentAreaFilled(false);
+        btnLista.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnListaActionPerformed(evt);
+            }
+        });
 
-        btnPerfil.setBackground(new java.awt.Color(255, 255, 255));
+        btnPerfil.setBackground(new java.awt.Color(0, 204, 204));
         btnPerfil.setFont(new java.awt.Font("DialogInput", 2, 11)); // NOI18N
-        btnPerfil.setForeground(new java.awt.Color(0, 0, 0));
+        btnPerfil.setForeground(new java.awt.Color(0, 204, 204));
         btnPerfil.setText("Perfil");
         btnPerfil.setBorder(null);
-        btnPerfil.setBorderPainted(false);
+        btnPerfil.setContentAreaFilled(false);
+        btnPerfil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPerfilActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -147,7 +157,7 @@ public class MenuCoach extends javax.swing.JFrame {
                         .addComponent(jLabel3)
                         .addGap(20, 20, 20))
                     .addComponent(btnHorario, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnLista)
@@ -155,7 +165,7 @@ public class MenuCoach extends javax.swing.JFrame {
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnPerfil)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -187,6 +197,22 @@ public class MenuCoach extends javax.swing.JFrame {
         x.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_btnHorarioActionPerformed
+
+    private void btnListaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListaActionPerformed
+        // TODO add your handling code here:
+        ListaCoach x = new ListaCoach();
+        x.setVisible(true);
+        x.setLocationRelativeTo(null);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnListaActionPerformed
+
+    private void btnPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPerfilActionPerformed
+        // TODO add your handling code here:
+        PerfilCoch x = new PerfilCoch();
+        x.setVisible(true);
+        x.setLocationRelativeTo(null);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnPerfilActionPerformed
 
     class FondoPanel extends JPanel{
         private Image imagen;

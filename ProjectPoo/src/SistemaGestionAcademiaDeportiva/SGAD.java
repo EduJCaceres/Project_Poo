@@ -4,7 +4,7 @@
  */
 package SistemaGestionAcademiaDeportiva;
 
-import Desing.Desing1;
+import Desing.Sede;
 
 /**
  *
@@ -18,7 +18,7 @@ public class SGAD {
     public static void main(String[] args) {
         
         //creamos una instancia para poder mostrar el diseño n° 1
-        Desing1 x = new Desing1();
+        Sede x = new Sede();
         x.setVisible(true);
         x.setLocationRelativeTo(null);
     }

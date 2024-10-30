@@ -35,6 +35,7 @@ public class Desing1 extends javax.swing.JFrame {
         jPanel1 = new FondoPanel();
         btnAlumno = new javax.swing.JButton();
         btnEntrenador = new javax.swing.JButton();
+        btnReturn4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,12 +63,21 @@ public class Desing1 extends javax.swing.JFrame {
             }
         });
 
+        btnReturn4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/return.jpg"))); // NOI18N
+        btnReturn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturn4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(132, 132, 132)
+                .addContainerGap()
+                .addComponent(btnReturn4, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(99, 99, 99)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnEntrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(btnAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -77,7 +87,9 @@ public class Desing1 extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btnAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnAlumno, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnReturn4, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35)
                 .addComponent(btnEntrenador, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -114,6 +126,14 @@ public class Desing1 extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnEntrenadorActionPerformed
 
+    private void btnReturn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturn4ActionPerformed
+        // TODO add your handling code here:
+        Sede x = new Sede();
+        x.setVisible(true);
+        x.setLocationRelativeTo(null);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnReturn4ActionPerformed
+
     
     //clase interna implemantada para darle una imagen de portada a la interfaz grafica
     class FondoPanel extends JPanel{
@@ -134,6 +154,11 @@ public class Desing1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAlumno;
     private javax.swing.JButton btnEntrenador;
+    private javax.swing.JButton btnReturn;
+    private javax.swing.JButton btnReturn1;
+    private javax.swing.JButton btnReturn2;
+    private javax.swing.JButton btnReturn3;
+    private javax.swing.JButton btnReturn4;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
