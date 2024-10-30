@@ -89,6 +89,12 @@ public class RegisterStudent extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Telefono:");
 
+        txtTelefono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTelefonoActionPerformed(evt);
+            }
+        });
+
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("Fecha de Nacimiento:");
 
@@ -354,6 +360,14 @@ public class RegisterStudent extends javax.swing.JFrame {
         x.setLocationRelativeTo(null);
         this.setVisible(false);
     }//GEN-LAST:event_btnRegisterActionPerformed
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void txtTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTelefonoActionPerformed
 
     
 
