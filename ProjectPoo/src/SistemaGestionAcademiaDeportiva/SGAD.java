@@ -6,6 +6,7 @@ package SistemaGestionAcademiaDeportiva;
 
 import Desing.Sede;
 
+
 /**
  *
  * @author Edu
@@ -21,6 +22,9 @@ public class SGAD {
         Sede x = new Sede();
         x.setVisible(true);
         x.setLocationRelativeTo(null);
+        
+      
+        
     }
     
 }

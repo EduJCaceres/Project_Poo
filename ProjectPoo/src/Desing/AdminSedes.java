@@ -129,7 +129,7 @@ public class AdminSedes extends javax.swing.JFrame {
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         // TODO add your handling code here:
-        MenuAdmin x = new MenuAdmin();
+        MenuAdmin1 x = new MenuAdmin1();
         x.setVisible(true);
         x.setLocationRelativeTo(null);
         this.setVisible(false);

@@ -197,7 +197,7 @@ public class DesingAdmin extends javax.swing.JFrame {
 
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         // TODO add your handling code here:
-        MenuAdmin x = new MenuAdmin();
+        MenuAdmin1 x = new MenuAdmin1();
         x.setVisible(true);
         x.setLocationRelativeTo(null);
         this.setVisible(false);
